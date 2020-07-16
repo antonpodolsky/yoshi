@@ -23,7 +23,7 @@ const Index: FC = () => {
   return (
     <div className={s.root}>
       <div className={s.header}>
-        <h2 data-hook="app-title">{t('app.title')}</h2>
+        <h1 data-hook="app-title">{t('app.title')}</h1>
       </div>
       <p className={s.intro}>
         {t('app.intro', {
