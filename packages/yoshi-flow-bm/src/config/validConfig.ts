@@ -11,6 +11,9 @@ export const validModuleConfig: InitialModuleConfig = {
   moduleConfigurationId: 'parent-module-id',
   appDefId: '00000000-0000-0000-0000-000000000000',
   routeNamespace: 'some-route',
+  translations: {
+    default: 'en',
+  },
   sentry: multipleValidOptions(
     undefined,
     {
