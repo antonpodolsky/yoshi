@@ -1,8 +1,3 @@
-// TODO - this is a temp hack until teamcity-autorelease-surge would support Base Url.
-const isPr =
-  process.env.VCS_BRANCH_NAME &&
-  !!process.env.VCS_BRANCH_NAME.replace(/\D+/g, '');
-
 const versions = require('./versions.json');
 const flows = require('./flows.json');
 
@@ -10,7 +5,7 @@ module.exports = {
   title: 'Yoshi Universe',
   tagline: 'A Galaxy of toolkits to develop applications at Wix',
   url: 'https://wix.github.io',
-  baseUrl: isPr ? '/' : '/yoshi/',
+  baseUrl: '',
   favicon: 'img/favicon.ico',
 
   // Used for publishing and more
