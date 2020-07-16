@@ -9,6 +9,7 @@ export interface SentryConfig {
 
 export interface TranslationConfig {
   default: string;
+  suspense?: boolean;
 }
 
 export interface ModuleConfig {

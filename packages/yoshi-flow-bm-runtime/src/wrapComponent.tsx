@@ -78,7 +78,7 @@ export default function wrapComponent<P extends {}>(
     );
 
     return (
-      <Suspense fallback="">
+      <Suspense fallback="SUSPENDEDDDDDDD">
         <ModuleProvider moduleParams={moduleParams}>
           {deps.reduce(
             (children, Provider) => (

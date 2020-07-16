@@ -7,6 +7,7 @@ export * from '@wix/wix-i18n-config';
 export function createI18nProvider(
   defaultLocale: string,
   asyncMessagesLoader: (locale: string) => Promise<Record<string, string>>,
+  useSuspense: boolean,
 ) {
   const Provider: FC = ({ children }) => {
     const { accountLanguage: locale = defaultLocale } = useModuleParams();
@@ -16,6 +17,7 @@ export function createI18nProvider(
         initI18n({
           locale,
           asyncMessagesLoader: asyncMessagesLoader.bind(undefined, locale),
+          useSuspense,
         }),
       [locale],
     );

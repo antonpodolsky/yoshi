@@ -32,7 +32,11 @@ ${addBI ? `import initSchemaLogger from '${model.config.bi}';` : ''}
 export default wrapComponent(Component, [
   ${
     addI18n
-      ? `createI18nProvider('${model.config.translations?.default}', (locale) => import(\`${model.localePath}/messages_\${locale}.json\`)),`
+      ? `createI18nProvider(
+          '${model.config.translations?.default}',
+          (locale) => import(\`${model.localePath}/messages_\${locale}.json\`),
+          ${!!model.config.translations?.suspense},
+        ),`
       : ''
   }
   ${
