@@ -209,7 +209,7 @@ export const getServerlessBase = (scope: string) => {
   ) {
     return `http://localhost:${serverlessPort}/serverless/${scope}`;
   }
-  return `/_serverless/${scope}`;
+  return `/serverless-yoshi-sandbox1/${scope}`;
 };
 
 export const getProjectArtifactVersion = () => {

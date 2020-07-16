@@ -50,8 +50,11 @@ export default async function publishServerless(config: Config) {
   }
   await git.cwd(path.resolve('temp'));
   await git.add('serverless/*');
-  await git.commit(`deploy #serverless ${getServerlessScope()}`, '--no-verify');
+  await git.commit(`deploy ${getServerlessScope()}`, '--no-verify');
   await git.push('origin', 'master');
+  await fetch(
+    `https://www.wix.com/_serverless/yoshi-serverless-lc-service-poc2/moveDeploymentToArtifact/${getServerlessScope()}`,
+  );
   // Wait for Publish to Serverless to be finished
   await retry(
     async () => {
