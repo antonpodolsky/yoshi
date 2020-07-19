@@ -1,6 +1,6 @@
 ---
 id: runtimes
-title: Business-Manager Flow Runtimes
+title: Runtimes
 sidebar_label: Runtimes
 ---
 
