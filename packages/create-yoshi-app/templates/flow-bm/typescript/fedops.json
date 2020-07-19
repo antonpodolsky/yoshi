@@ -1,0 +1,13 @@
+[
+  {
+    "appName": "{%projectName%}.pages.index",
+    "notifications": {
+      "slack_channels": [
+        "{%projectName%}-urgent"
+      ]
+    },
+    "deploy_annotations": [
+      "{%projectName%}"
+    ]
+  }
+]
