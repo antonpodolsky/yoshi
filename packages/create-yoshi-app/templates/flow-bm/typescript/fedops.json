@@ -8,6 +8,7 @@
     },
     "deploy_annotations": [
       "{%projectName%}"
-    ]
+    ],
+    "ignore_first_request_roundtrip": true
   }
 ]
