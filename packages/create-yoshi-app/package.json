@@ -33,7 +33,7 @@
     "bi-logger-yoshi": "^1.0.201",
     "chalk": "^2.4.1",
     "chrome-launcher": "0.13.4",
-    "commander": "^2.16.0",
+    "commander": "^6.0.0",
     "constant-case": "^2.0.0",
     "debug": "4.1.1",
     "execa": "^2.1.0",
