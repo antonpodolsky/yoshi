@@ -8,6 +8,7 @@ import {
 
 export const generateComponentCode = (
   { absolutePath, componentId }: { absolutePath: string; componentId: string },
+  type: 'page' | 'exported-component',
   model: FlowBMModel,
 ) => {
   const addExperiments = shouldAddExperiments(model);
@@ -19,6 +20,7 @@ export const generateComponentCode = (
 import Component from '${absolutePath}';
 import {
   wrapComponent,
+  createComponentInfoProvider,
   ${addExperiments ? 'createExperimentsProvider,' : ''}
   ${addSentry ? 'createSentryProvider,' : ''}
   ${addFedops ? 'createFedopsProvider,' : ''}
@@ -28,6 +30,10 @@ import {
 ${addBI ? `import initSchemaLogger from '${model.config.bi}';` : ''}
 
 export default wrapComponent(Component, [
+  createComponentInfoProvider(JSON.parse('${JSON.stringify({
+    componentId,
+    type,
+  })}')),
   ${
     addExperiments
       ? `createExperimentsProvider(${JSON.stringify(

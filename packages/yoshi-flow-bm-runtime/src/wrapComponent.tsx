@@ -10,7 +10,7 @@ export default function wrapComponent<P extends {}>(
   Component: ComponentType<P>,
   deps: Array<ComponentType>,
 ): ComponentType<IBMModuleParams & AdditionalProps & P> {
-  return props => {
+  return (props) => {
     const {
       routeBaseName,
       router,
