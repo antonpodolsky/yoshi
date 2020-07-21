@@ -10070,10 +10070,10 @@ bufrw@^1.3.0:
     hexer "^1.5.0"
     xtend "^4.0.0"
 
-build-url@1.3.3:
-  version "1.3.3"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/build-url/-/build-url-1.3.3.tgz#fad1ef30d8861931f85bc1f41fca0a537be31e5f"
-  integrity sha1-+tHvMNiGGTH4W8H0H8oKU3vjHl8=
+build-url@2.0.0:
+  version "2.0.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/build-url/-/build-url-2.0.0.tgz#7bdd4045e51caa96c1586990e4ca514937598fc2"
+  integrity sha1-e91AReUcqpbBWGmQ5MpRSTdZj8I=
 
 buildmail@4.0.1:
   version "4.0.1"
