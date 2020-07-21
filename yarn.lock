@@ -4705,12 +4705,13 @@
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
 
-"@types/jest@24.9.1", "@types/jest@^24.0.13":
-  version "24.9.1"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@types/jest/-/jest-24.9.1.tgz#02baf9573c78f1b9974a5f36778b366aa77bd534"
-  integrity sha1-Arr5Vzx48bmXSl82d4s2aqd71TQ=
+"@types/jest@26.0.5", "@types/jest@^26.0.0":
+  version "26.0.5"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@types/jest/-/jest-26.0.5.tgz#23a8eecf4764a770ea8d3a0d1ea16b96c822035d"
+  integrity sha1-I6juz0dkp3DqjToNHqFrlsgiA10=
   dependencies:
-    jest-diff "^24.3.0"
+    jest-diff "^25.2.1"
+    pretty-format "^25.2.1"
 
 "@types/json-schema@*", "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.4":
   version "7.0.5"
@@ -17834,7 +17835,7 @@ jest-diff@^23.6.0:
     jest-get-type "^22.1.0"
     pretty-format "^23.6.0"
 
-jest-diff@^24.3.0, jest-diff@^24.8.0, jest-diff@^24.9.0:
+jest-diff@^24.8.0, jest-diff@^24.9.0:
   version "24.9.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/jest-diff/-/jest-diff-24.9.0.tgz#931b7d0d5778a1baf7452cb816e325e3724055da"
   integrity sha1-kxt9DVd4obr3RSy4FuMl43JAVdo=

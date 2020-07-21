@@ -20,7 +20,7 @@
     "yoshi": "^4.1.0"
   },
   "dependencies": {
-    "@types/jest": "^24.0.13",
+    "@types/jest": "^26.0.0",
     "@types/puppeteer": "^1.19.1",
     "babel-jest": "^24.1.0",
     "chalk": "2.4.2",
