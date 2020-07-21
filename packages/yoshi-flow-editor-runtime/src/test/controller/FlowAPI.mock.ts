@@ -12,11 +12,13 @@ export const controllerFlowAPIMock = ({
   controllerConfig,
   appDefinitionId,
   widgetId,
+  biLogger = null,
 }: {
   experimentsConfig: ExperimentsConfig;
   controllerConfig: IWidgetControllerConfig;
   appDefinitionId: string;
   widgetId: string;
+  biLogger: any;
 }) =>
   new ControllerFlowAPI({
     viewerScriptFlowAPI: new ViewerScriptFlowAPI({
@@ -25,7 +27,7 @@ export const controllerFlowAPIMock = ({
       biConfig: null,
       appName: 'app',
       projectName: 'project',
-      biLogger: null,
+      biLogger,
       inEditor: false,
       platformServices: aDefaultPlatformServices(),
       wixAPI: wixCodeAPIMock,
