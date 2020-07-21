@@ -4649,7 +4649,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/i18next@*", "@types/i18next@8.4.5", "@types/i18next@8.4.6":
+"@types/i18next@*", "@types/i18next@12.1.0", "@types/i18next@8.4.5":
   version "8.4.5"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@types/i18next/-/i18next-8.4.5.tgz#d6c0cb594258815219c70006e9f5cd65ad6d797f"
   integrity sha1-1sDLWUJYgVIZxwAG6fXNZa1teX8=
