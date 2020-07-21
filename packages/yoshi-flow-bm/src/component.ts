@@ -21,6 +21,7 @@ export const generateComponentCode = (
 import Component from '${absolutePath}';
 import {
   wrapComponent,
+  ${addI18n ? 'createI18nProvider,' : ''}
   ${addExperiments ? 'createExperimentsProvider,' : ''}
   ${addSentry ? 'createSentryProvider,' : ''}
   ${addFedops ? 'createFedopsProvider,' : ''}
